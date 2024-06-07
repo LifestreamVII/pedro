@@ -1,0 +1,56 @@
+.CartridgeLoader {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.nav {
+  display: none;
+}
+
+h2,
+.loader {
+  color: #fffff1;
+  opacity: 0.5;
+  font-size: 10px;
+}
+
+.LoadingSpinner {
+  width: 80%;
+  margin: 10px auto 0px;
+}
+
+.cartoucheDect {
+  background: url("../img/CartouchePokemon.png") center/contain no-repeat;
+  height: 200px;
+  width: 130px;
+  margin: auto;
+  position: relative;
+  z-index: 1000;
+}
+
+.Cartouche {
+  height: 200px;
+  width: 130px;
+  margin: auto;
+  position: relative;
+  z-index: 1000;
+  background: url("../img/Cartouche.png") center/contain no-repeat;
+}
+
+.nav {
+  width: 150px;
+  margin: auto;
+}
+
+.Error {
+  height: 150px;
+  width: 130px;
+  margin: auto;
+  position: relative;
+  z-index: 1000;
+  background: url("../img/Error.png") center/cover no-repeat;
+}

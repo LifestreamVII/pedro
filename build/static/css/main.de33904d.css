@@ -1,0 +1,2 @@
+:root{--colorbackground:#151316;--colorSecondaire:#391319;--colorFont:#f1f1f1;--navColor:#161616}body{background-color:var(--colorbackground);color:var(--colorFont)}nav{bottom:0;position:absolute}.header-custom{align-items:center;background:var(--navColor);border:1px solid #fff;display:flex;justify-content:space-around}.nav-header-custom{font-weight:700;letter-spacing:2px}
+/*# sourceMappingURL=main.de33904d.css.map*/

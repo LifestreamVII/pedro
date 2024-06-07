@@ -1,0 +1,39 @@
+.logo-container {
+  height: 200px;
+  width: 100%;
+  border: solid 2px red;
+}
+
+.boxHome {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.logopedro {
+  height: 300px;
+  width: 200px;
+  margin: 0 auto;
+  background: url("../img/Title.png") center/contain no-repeat;
+}
+
+.header-custom {
+  display: none;
+}
+
+.Loader {
+  margin: 0 auto;
+}
+
+.nav {
+  background: none;
+}
+
+.text-center {
+  height: 30vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
