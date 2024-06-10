@@ -13,13 +13,15 @@ const CartoucheNeed: React.FC<CartoucheNeedProps> = ({ onError }) => {
   const [error, setError] = useState<string | null>(null);
   const history = useHistory();
 
+  // Gère le cas où une cartouche est détectée avec succès
   const handleCartridgeDetected = () => {
     console.log("Cartridge detected");
     setIsCartridgeDetected(true);
-    setError(null); // Clear any previous error
+    setError(null); // Efface les erreurs précédentes
     onError(null);
   };
 
+  // Gère les erreurs Bluetooth
   const handleBluetoothError = (error: string | null) => {
     console.log("Bluetooth error:", error);
     setIsCartridgeDetected(false);
@@ -27,19 +29,22 @@ const CartoucheNeed: React.FC<CartoucheNeedProps> = ({ onError }) => {
     onError(error);
   };
 
+  // Redirige vers la page d'information une fois la cartouche détectée
   const handleNavigate = () => {
-    history.push("/next-page"); // Remplacez "/next-page" par le chemin de votre page de destination
+    history.push("/info");
   };
 
   return (
     <div className="CartridgeLoader">
       <h2>First, we need some information about your game.</h2>
+      {/* Placeholder pour l'icône de la cartouche */}
       <div className="cartridge-placeholder">
         <div
           className={`cartridge-icon ${isCartridgeDetected ? "detected" : ""}`}
         />
       </div>
 
+      {/* Affiche le spinner de chargement pendant la détection */}
       {!isCartridgeDetected && !error && (
         <>
           <div className="LoadingSpinner">
@@ -50,17 +55,17 @@ const CartoucheNeed: React.FC<CartoucheNeedProps> = ({ onError }) => {
         </>
       )}
 
+      {/* Affiche les erreurs Bluetooth */}
       {error && <div className="error">Bluetooth scanning failed: {error}</div>}
 
+      {/* Affiche le contenu lorsque la cartouche est détectée */}
       {isCartridgeDetected && !error && (
         <>
           <div className="cartoucheDect"></div>
-          <button className="nav" onClick={handleNavigate}>
-            Go to Next Page
-          </button>
         </>
       )}
 
+      {/* Composant BluetoothDetector pour détecter la cartouche */}
       <BluetoothDetector
         onCartridgeDetected={handleCartridgeDetected}
         onError={handleBluetoothError}

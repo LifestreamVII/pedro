@@ -1,0 +1,95 @@
+.card {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.grid {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.grid p {
+  margin: 5px 0;
+}
+
+.extraction {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+
+.custom-button {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  width: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #ff5858, #fb839e);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.custom-button:hover {
+  background: linear-gradient(90deg, #fb839e, #ff5858);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+.custom-button:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ButtonAction {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.ButtonAction button {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.trainer-card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.trainer-image {
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.trainer-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  justify-content: flex-start;
+  align-content: center;
+  width: 40%;
+}
+
+.trainer-info p span {
+  margin: 5px 0;
+  font-size: 24px;
+}
+
+.trainer-info p strong {
+  font-weight: bold;
+}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Navigation from "../components/Navigation";
 
 const NFCReader: React.FC = () => {
   const [message, setMessage] = useState<string>("");
@@ -73,6 +74,8 @@ const NFCReader: React.FC = () => {
       {isMobile}
       <br></br>
       {isMobile && <button onClick={startNFC}>Start NFC Scan</button>}
+
+      <Navigation />
     </div>
   );
 };

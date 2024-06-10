@@ -7,11 +7,6 @@ body {
   color: var(--colorFont);
 }
 
-nav {
-  bottom: 0;
-  position: absolute;
-}
-
 .btnInstall {
   width: 50%;
   margin: 0 auto 20px;
@@ -19,16 +14,9 @@ nav {
   text-transform: uppercase;
 }
 
-.header-custom {
-  /* navbar */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: var(--navColor);
-  border: solid 1px white;
-}
-
-.nav-header-custom {
-  font-weight: bold;
-  letter-spacing: 2px;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: solid 2px red;
+  width: 50%;
 }

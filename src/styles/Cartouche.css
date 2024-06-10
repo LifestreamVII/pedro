@@ -7,10 +7,6 @@
   justify-content: space-evenly;
 }
 
-.nav {
-  display: none;
-}
-
 h2,
 .loader {
   color: #fffff1;
@@ -39,11 +35,6 @@ h2,
   position: relative;
   z-index: 1000;
   background: url("../img/Cartouche.png") center/contain no-repeat;
-}
-
-.nav {
-  width: 150px;
-  margin: auto;
 }
 
 .Error {

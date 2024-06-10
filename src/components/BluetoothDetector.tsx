@@ -1,5 +1,7 @@
 import React, { useCallback, useState } from "react";
+import ProgressBar from "./ProgressBar";
 
+// BluetoothDetector Component
 interface BluetoothDetectorProps {
   onCartridgeDetected: () => void;
   onError: (error: string | null) => void;
@@ -10,6 +12,7 @@ const BluetoothDetector: React.FC<BluetoothDetectorProps> = ({
   onError,
 }) => {
   const [message, setMessage] = useState<string>("");
+  const [deviceConnected, setDeviceConnected] = useState<boolean>(false);
 
   const scanForBluetoothDevices = useCallback(async () => {
     if (!navigator.bluetooth) {
@@ -36,6 +39,8 @@ const BluetoothDetector: React.FC<BluetoothDetectorProps> = ({
       console.log("GATT server connected:", server);
       setMessage("GATT server connected.");
 
+      setDeviceConnected(true); // Set the device connected state
+
       setTimeout(() => {
         onCartridgeDetected(); // Execute callback after detection
       }, 3000);
@@ -49,10 +54,11 @@ const BluetoothDetector: React.FC<BluetoothDetectorProps> = ({
   return (
     <div>
       {message}
-      <br></br>
+      <br />
       <button onClick={scanForBluetoothDevices}>
-        Scan for Bluetooth Devices
+        <i className="material-icons">bluetooth</i>
       </button>
+      {deviceConnected && <ProgressBar />}
     </div>
   );
 };

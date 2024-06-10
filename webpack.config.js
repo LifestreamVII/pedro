@@ -35,6 +35,7 @@ module.exports = {
       swDest: 'service-worker.js',
     }),
   ],
+  devtool: 'source-map', // Générer des fichiers source map pour le débogage
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
     compress: true,

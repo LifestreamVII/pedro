@@ -18,16 +18,8 @@
   background: url("../img/Title.png") center/contain no-repeat;
 }
 
-.header-custom {
-  display: none;
-}
-
 .Loader {
   margin: 0 auto;
-}
-
-.nav {
-  background: none;
 }
 
 .text-center {

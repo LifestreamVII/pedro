@@ -1,0 +1,21 @@
+.Nav {
+  width: 100%;
+}
+
+.header-custom-me {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #161616;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  color: #f1f1f1 !important;
+}
+
+.material-icons{
+  font-size: 30px;
+}
