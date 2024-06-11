@@ -9,14 +9,13 @@ const Navigation: FunctionComponent = () => {
       <header className="navigation-">
         <div className="header-custom-me">
           <Link to="/nfc">
-            {" "}
             {/* Utilisez Link pour naviguer vers la page d'information */}
             <i className="material-icons">adb</i>
           </Link>
-          <Link to="/">
+          <Link to="/info">
             <i className="material-icons">home</i>
           </Link>
-          <Link to="/info">
+          <Link to="/">
             <i className="material-icons">help_outline</i>
           </Link>
         </div>

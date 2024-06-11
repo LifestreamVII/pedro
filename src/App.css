@@ -7,6 +7,10 @@ body {
   color: var(--colorFont);
 }
 
+.App {
+  margin-top: 40px;
+}
+
 .btnInstall {
   width: 50%;
   margin: 0 auto 20px;

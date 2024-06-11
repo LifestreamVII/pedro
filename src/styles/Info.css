@@ -76,6 +76,12 @@
   display: block;
 }
 
+@media screen and (max-width: 500px) {
+  .trainer-image img {
+    width: 100px;
+  }
+}
+
 .trainer-info {
   display: grid;
   grid-template-columns: 1fr 1fr;

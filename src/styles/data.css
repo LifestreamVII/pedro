@@ -1,0 +1,187 @@
+.data {
+  height: 100px;
+  width: 300px;
+  background: url("../img/database.png") center/contain no-repeat;
+}
+
+.centerALL {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.NFCclick {
+  padding: 10px 20px;
+  width: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #ff5858, #fb839e);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.data-container {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+
+.Box p {
+  color: #a4a4a4;
+}
+
+.Box h1,
+.Box p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* ProgressBar.css */
+.progress-bar-container {
+  width: 80%;
+  background-color: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 30px;
+  background-color: #6200ea;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  transition: width 0.4s ease;
+}
+.nfc {
+  background: linear-gradient(90deg, #ff5858, #fb839e);
+  text-align: center;
+  padding: 10px 20px;
+  width: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #ff5858, #fb839e);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+.msg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.progress-bar-container {
+  margin-top: 20px;
+  width: 50%;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #6200ea;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+.pokemon-container ul {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: #181818;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.pokemon-container ul li {
+  width: 100px;
+  border: solid 1px black;
+  background-color: #202020;
+  border-radius: 10px;
+  opacity: 75%;
+  padding: 10px;
+}
+
+ul li {
+  background-color: red;
+}
+
+.pokemon-container ul li img {
+  width: 100%;
+  height: 50px;
+  object-fit: contain;
+}
+
+h3 {
+  color: white;
+  font-size: 30px !important;
+}
+
+.boxInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.namePokemon {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.affichageNFC {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.affichageNFC h2 {
+  text-align: center;
+}
+
+.affichageNFC p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.namePokemon img {
+  width: 40%;
+  margin: auto;
+}
+
+.select {
+  text-align: center;
+  margin-top: 30px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.boxInformation {
+  margin-top: 30px !important;
+}
